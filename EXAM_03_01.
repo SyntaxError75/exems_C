@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+double r;
+double pi = M_PI;
+int res = scanf("%lf",&r);
+if (res == 0 || res == -1)printf("n/a");
+else{
+double v = (4./3.)*pi * pow(r,3);
+double m = v*21500;
+printf("%f",m);
+}
+return 0;
+}
