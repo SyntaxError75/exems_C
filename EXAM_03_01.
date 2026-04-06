@@ -1,3 +1,6 @@
+//не забудь прописать -lm при компиляции
+// gcc -Wall -Wextra -Werror -lm main.c
+
 #include <stdio.h>
 #include <math.h>
 
@@ -9,7 +12,7 @@ if (res == 0 || res == -1)printf("n/a");
 else{
 double v = (4./3.)*pi * pow(r,3);
 double m = v*21500;
-printf("%f",m);
+printf("%.0lf", m);
 }
 return 0;
 }
