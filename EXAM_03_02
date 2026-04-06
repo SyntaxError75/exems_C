@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+  double rad;
+  char c = 0;
+  int err = scanf("%lf%c",&rad,&c);
+  if (err ==0 || err == -1|| c ){
+    printf("n/a");
+  }else{
+  double res = round(rad*57.29);
+  printf("%.0lf",res);
+  }
+  return 0;
+}
