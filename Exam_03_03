@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(){
+  int num;
+ scanf("%d",&num);
+int n1 = abs(num/100);
+int n2 = abs(num%100/10);
+int n3 = abs(num%10);
+  if (num<0)printf("-");
+printf("%d%d%d",n3,n2,n1);
+  return 0;
+}
