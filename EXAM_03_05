@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+int A,B,C;
+char a,b,c = 0;
+  int error = scanf("%d%c%d%c%d%c",&A,&a,&B,&b,&C,&c);
+if (error !=5 || a!=' ' || b!=' '|| c!=0){
+  printf("n/a");
+}else if((A== 0 ||A==1)&& (B== 0 || B==1)&& (C== 0 ||C==1)) {
+  int res = A & (B || C);
+  printf("%d",res);
+}
+  else printf("n/a");
+  return 0;
+}
