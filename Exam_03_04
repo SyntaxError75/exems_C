@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+int A,B,C;
+char a,b,c = 0;
+  int error = scanf("%d%c%d%c%d%c",&A,&a,&B,&b,&C,&c);
+if (error !=5 || a!=' ' || b!=' '|| c!=0){
+  printf("n/a");
+}else{
+  int res = (C>A && C<B)||(C>B && C<A);
+  printf("%d",res);
+}
+  return 0;
+}
